@@ -2,8 +2,8 @@ version: "3.9"
 services:
   web:
     build:
-      context: ..
-      dockerfile: operation/Dockerfile
+      context: ../..
+      dockerfile: operation/Docker/Dockerfile
     ports:
       - "3000:80"
     image: kausheekraj/braintask-nginx
