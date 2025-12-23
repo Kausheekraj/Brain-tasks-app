@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: operation/Dockerfile
+    ports:
+      - "3000:80"
+    image: kausheekraj/braintask-nginx
+    container_name: braintask-web
