@@ -6,5 +6,5 @@ services:
       dockerfile: operation/Docker/Dockerfile
     ports:
       - "3000:80"
-    image: kausheekraj/braintask-nginx
+    image: 613622767668.dkr.ecr.us-east-2.amazonaws.com/brain-task-app
     container_name: braintask-web
