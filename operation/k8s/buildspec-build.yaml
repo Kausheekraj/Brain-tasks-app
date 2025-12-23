@@ -8,7 +8,7 @@ phases:
 
       ACCOUNT_ID=613622767668
       REGION=us-east-2
-      REPOSITORY_NAME=braintasks-app
+      REPOSITORY_NAME=brain-tasks-app
       REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY_NAME
 
       aws ecr get-login-password --region $REGION | \
