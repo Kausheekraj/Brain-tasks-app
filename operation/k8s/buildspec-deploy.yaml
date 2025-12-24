@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo "Installing kubectl and AWS CLI..."
-      - chmod operation/scripts/install_kube.sh
+      - chmod 755 operation/scripts/install_kube.sh
       - ./operation/scripts/install_kube.sh
       - echo "Installation finished"
   pre_build:
