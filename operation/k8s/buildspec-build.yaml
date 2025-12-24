@@ -14,7 +14,8 @@ phases:
       aws ecr get-login-password --region $REGION | \
         docker login --username AWS --password-stdin \
         $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
-
+      echo "Set timezone"
+      timedatectl set-timezone Asia/Kolkata
       IMAGE_TAG=$(date +'%Y%m%d-%H%M')
 
   build:
