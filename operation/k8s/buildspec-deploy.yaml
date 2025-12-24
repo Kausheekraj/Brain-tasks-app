@@ -13,7 +13,7 @@ phases:
   pre_build:
     commands:
       - echo "Configuring kubeconfig for EKS cluster..."
-      - aws eks update-kubeconfig --region us-east-2 --name <your-cluster-name>
+      - aws eks update-kubeconfig --region us-east-2 --name  brain-tasks-eks
   build:
     commands:
       - echo "Deploying application to EKS..."
