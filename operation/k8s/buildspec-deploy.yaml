@@ -14,8 +14,8 @@ phases:
   build:
     commands:
       - echo "Deploying application to EKS..."
-      - chmod +x operation/scripts/deploy.sh
-      - ./operation/scripts/deploy.sh
+      - chmod +x operation/scripts/compose.sh
+      - ./operation/scripts/compose.sh -d
   post_build:
     commands:
       - echo "Deployment finished at $(date)"
