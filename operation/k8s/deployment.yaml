@@ -19,7 +19,7 @@ spec:
           image: 613622767668.dkr.ecr.us-east-2.amazonaws.com/brain-tasks-app:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 3000
+            - containerPort: 80
           resources:
             requests:
               cpu: 100m
@@ -30,12 +30,12 @@ spec:
           livenessProbe:
             httpGet:
               path: /health
-              port: 3000
+              port: 80
             initialDelaySeconds: 30
             periodSeconds: 10
           readinessProbe:
             httpGet:
               path: /ready
-              port: 3000
+              port: 80
             initialDelaySeconds: 15
             periodSeconds: 5
