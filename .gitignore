@@ -1,2 +1,9 @@
 project-logs.md
-copy-paste.md aws-auth.yaml trigger.txt
+copy-paste.md 
+aws-auth.yaml 
+trigger.txt
+operation/k8s/cloud-watch-fluent-bit-config.yaml
+operation/k8s/cwagent-fluent-bit-quickstart.yaml
+
+
+
