@@ -64,35 +64,6 @@ AWS CodePipeline
 
 ---
 
-## 🐳 Docker Setup
-
-### Dockerfile
-
-```dockerfile
-FROM nginx:alpine3.22-slim
-RUN rm -rf /usr/share/nginx/html
-COPY application/dist /usr/share/nginx/html
-EXPOSE 80
-```
-
-### docker-compose.yml
-
-```yaml
-version: "3.9"
-services:
-  web:
-    build:
-      context: ../..
-      dockerfile: operation/Docker/Dockerfile
-    image: 613622767668.dkr.ecr.us-east-2.amazonaws.com/brain-tasks-app
-    ports:
-      - "3000:80"
-```
-
-Used locally and inside CI for consistency.
-
----
-
 ## ☁️ AWS Infrastructure (Terraform)
 
 ### Components Created

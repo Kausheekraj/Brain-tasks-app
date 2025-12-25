@@ -10,11 +10,7 @@ phases:
   pre_build:
     commands:
       - echo "Configuring kubeconfig for EKS cluster..."
-      - export AWS_REGION=us-east-2
-      - export CLUSTER_NAME=brain-tasks-eks
-      - export KUBECONFIG=/tmp/kubeconfig
-      - aws eks update-kubeconfig --name "$CLUSTER_NAME" --region "$AWS_REGION" --kubeconfig "$KUBECONFIG"
-      - kubectl --kubeconfig "$KUBECONFIG" get ns
+      - aws eks update-kubeconfig --region us-east-2 --name  brain-tasks-eks
   build:
     commands:
       - echo "Deploying application to EKS..."
